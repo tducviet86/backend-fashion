@@ -8,6 +8,7 @@ const app = express();
 app.use(express.static(`${__dirname}/public`));
 
 const productsController = require("./controllers/products.controller");
+const categoriesController = require("./controllers/categories.controller");
 const authenticateJWT = require("./middlewares/authenticateJWT");
 
 const port = 3100;
@@ -21,7 +22,10 @@ app.get("/", (req, res) => {
 });
 app.route("/products").get(productsController.getProducts);
 app.route("/products-tag").get(productsController.getProductsByTag);
-// app.route("/products-categories").get(productsController.getCategories);
+app.route("/categories").get(categoriesController.getCategories);
+app
+  .route("/categories/:id/products")
+  .get(categoriesController.getProductsByCategory);
 
 app.use(authenticateJWT);
 

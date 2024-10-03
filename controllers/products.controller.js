@@ -28,3 +28,7 @@ exports.getProductsByTag = (req, res) => {
     products: filterProductsByTag,
   });
 };
+
+//  chi lay san pham o cate api
+// tao controller va data cho tat ca du an
+// viet api tra ve toan cate

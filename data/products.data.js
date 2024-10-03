@@ -8,7 +8,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
-    category: "Tops",
+    category: {
+      id: 1,
+      name: "Tops",
+    },
     image: "/Image/image1.jpg",
   },
   {
@@ -20,7 +23,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 151,
-    category: "Shirts & Blouses",
+    category: {
+      id: 2,
+      name: "Shirts & Blouses",
+    },
     image: "/Image/image2.jpg",
   },
   {
@@ -32,7 +38,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
-    category: "Cardigans & Sweaters",
+    category: {
+      id: 1,
+      name: "Tops",
+    },
     image: "/Image/image20.jpg",
   },
   {
@@ -44,7 +53,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 151,
-    category: "Jeans",
+    category: {
+      id: 1,
+      name: "Tops",
+    },
     image: "/Image/image3.jpg",
   },
   {
@@ -56,7 +68,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 151,
-    category: "Jeans",
+    category: {
+      id: 2,
+      name: "Shirts & Blouses",
+    },
     image: "/Image/image4.jpg",
   },
   {
@@ -68,7 +83,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 151,
-    category: "Jeans",
+    category: {
+      id: 2,
+      name: "Shirts & Blouses",
+    },
     image: "/Image/image5.jpg",
   },
   {
@@ -80,7 +98,13 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
-    category: "Tops",
+    category: {
+      id: 2,
+      name: {
+        id: 2,
+        name: "Shirts & Blouses",
+      },
+    },
     image: "/Image/image6.jpg",
   },
   {
@@ -92,7 +116,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 151,
-    category: "Tops",
+    category: {
+      id: 2,
+      name: "Shirts & Blouses",
+    },
     image: "/Image/image7.jpg",
   },
   {
@@ -104,7 +131,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
-    category: "Shorts",
+    category: {
+      id: 5,
+      name: "Shorts",
+    },
     image: "/Image/image8.jpg",
   },
   {
@@ -116,7 +146,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 151,
-    category: "Tops",
+    category: {
+      id: 3,
+      name: "Cardigans & Sweaters",
+    },
     image: "/Image/image9.jpg",
   },
   {
@@ -128,7 +161,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
-    category: "Shorts",
+    category: {
+      id: 5,
+      name: "Shorts",
+    },
     image: "/Image/image10.jpg",
   },
   {
@@ -140,7 +176,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 151,
-    category: "Tops",
+    category: {
+      id: 3,
+      name: "Cardigans & Sweaters",
+    },
     image: "/Image/image11.jpg",
   },
   {
@@ -152,7 +191,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
-    category: "Shirts & Blouses",
+    category: {
+      id: 3,
+      name: "Cardigans & Sweaters",
+    },
     image: "/Image/image12.jpg",
   },
   {
@@ -164,7 +206,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 151,
-    category: "Cardigans & Sweaters",
+    category: {
+      id: 3,
+      name: "Cardigans & Sweaters",
+    },
     image: "/Image/image13.jpg",
   },
   {
@@ -176,7 +221,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
-    category: "Shirts & Blouses",
+    category: {
+      id: 4,
+      name: "Jeans",
+    },
     image: "/Image/image14.jpg",
   },
   {
@@ -188,7 +236,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 151,
-    category: "Tops",
+    category: {
+      id: 4,
+      name: "Jeans",
+    },
     image: "/Image/image15.jpg",
   },
   {
@@ -200,7 +251,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
-    category: "Shorts",
+    category: {
+      id: 5,
+      name: "Shorts",
+    },
     image: "/Image/image16.jpg",
   },
   {
@@ -212,7 +266,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 151,
-    category: "Tops",
+    category: {
+      id: 4,
+      name: "Jeans",
+    },
     image: "/Image/image17.jpg",
   },
   {
@@ -224,7 +281,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
-    category: "Jeans",
+    category: {
+      id: 4,
+      name: "Jeans",
+    },
     image: "/Image/image18.jpg",
   },
   {
@@ -236,7 +296,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 151,
-    category: "Shorts",
+    category: {
+      id: 5,
+      name: "Shorts",
+    },
     image: "/Image/image19.jpg",
   },
 ];
