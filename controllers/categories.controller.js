@@ -14,7 +14,6 @@ exports.getProductsByCategory = (req, res) => {
   const filterProduct = products.filter(
     (item) => item.category.id === categoryId
   );
-  console.log(filterProduct);
   res.status(200).json({
     products: filterProduct,
   });
