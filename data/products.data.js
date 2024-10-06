@@ -8,6 +8,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
+    childrenCategory: {
+      id: 1,
+      name: "T-Shirts",
+    },
     category: {
       id: 1,
       name: "Tops",
@@ -21,8 +25,12 @@ exports.products = [
     ratingCount: 10,
     rating: 5,
     brand: "Dorothy Perkins",
-    discount: 0.2,
+    discount: 0,
     price: 151,
+    childrenCategory: {
+      id: 3,
+      name: "T-Shirts",
+    },
     category: {
       id: 2,
       name: "Shirts & Blouses",
@@ -38,6 +46,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
+    childrenCategory: {
+      id: 2,
+      name: "Blouses",
+    },
     category: {
       id: 1,
       name: "Tops",
@@ -51,8 +63,12 @@ exports.products = [
     ratingCount: 10,
     rating: 5,
     brand: "Dorothy Perkins",
-    discount: 0.2,
+    discount: 0,
     price: 151,
+    childrenCategory: {
+      id: 2,
+      name: "Shirts",
+    },
     category: {
       id: 1,
       name: "Tops",
@@ -66,8 +82,12 @@ exports.products = [
     ratingCount: 10,
     rating: 5,
     brand: "Dorothy Perkins",
-    discount: 0.2,
+    discount: 0,
     price: 151,
+    childrenCategory: {
+      id: 2,
+      name: "T-Shirts",
+    },
     category: {
       id: 2,
       name: "Shirts & Blouses",
@@ -81,8 +101,12 @@ exports.products = [
     ratingCount: 10,
     rating: 5,
     brand: "Dorothy Perkins",
-    discount: 0.2,
+    discount: 0,
     price: 151,
+    childrenCategory: {
+      id: 2,
+      name: "Blouses",
+    },
     category: {
       id: 2,
       name: "Shirts & Blouses",
@@ -98,6 +122,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
+    childrenCategory: {
+      id: 2,
+      name: "T-Shirts",
+    },
     category: {
       id: 2,
       name: {
@@ -114,8 +142,12 @@ exports.products = [
     ratingCount: 10,
     rating: 5,
     brand: "Dorothy Perkins",
-    discount: 0.2,
+    discount: 0,
     price: 151,
+    childrenCategory: {
+      id: 2,
+      name: "T-Shirts",
+    },
     category: {
       id: 2,
       name: "Shirts & Blouses",
@@ -131,6 +163,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
+    childrenCategory: {
+      id: 2,
+      name: "Blouses",
+    },
     category: {
       id: 5,
       name: "Shorts",
@@ -144,8 +180,12 @@ exports.products = [
     ratingCount: 10,
     rating: 5,
     brand: "Dorothy Perkins",
-    discount: 0.2,
+    discount: 0,
     price: 151,
+    childrenCategory: {
+      id: 2,
+      name: "Blouses",
+    },
     category: {
       id: 3,
       name: "Cardigans & Sweaters",
@@ -161,6 +201,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
+    childrenCategory: {
+      id: 2,
+      name: "T-Shirts",
+    },
     category: {
       id: 5,
       name: "Shorts",
@@ -174,8 +218,12 @@ exports.products = [
     ratingCount: 10,
     rating: 5,
     brand: "Dorothy Perkins",
-    discount: 0.2,
+    discount: 0,
     price: 151,
+    childrenCategory: {
+      id: 2,
+      name: "T-Shirts",
+    },
     category: {
       id: 3,
       name: "Cardigans & Sweaters",
@@ -191,6 +239,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
+    childrenCategory: {
+      id: 2,
+      name: "T-Shirts",
+    },
     category: {
       id: 3,
       name: "Cardigans & Sweaters",
@@ -204,8 +256,12 @@ exports.products = [
     ratingCount: 10,
     rating: 5,
     brand: "Dorothy Perkins",
-    discount: 0.2,
+    discount: 0,
     price: 151,
+    childrenCategory: {
+      id: 2,
+      name: "T-Shirts",
+    },
     category: {
       id: 3,
       name: "Cardigans & Sweaters",
@@ -221,6 +277,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
+    childrenCategory: {
+      id: 2,
+      name: "Blouses",
+    },
     category: {
       id: 4,
       name: "Jeans",
@@ -234,8 +294,12 @@ exports.products = [
     ratingCount: 10,
     rating: 5,
     brand: "Dorothy Perkins",
-    discount: 0.2,
+    discount: 0,
     price: 151,
+    childrenCategory: {
+      id: 2,
+      name: "Blouses",
+    },
     category: {
       id: 4,
       name: "Jeans",
@@ -251,6 +315,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
+    childrenCategory: {
+      id: 2,
+      name: "Blouses",
+    },
     category: {
       id: 5,
       name: "Shorts",
@@ -264,8 +332,12 @@ exports.products = [
     ratingCount: 10,
     rating: 5,
     brand: "Dorothy Perkins",
-    discount: 0.2,
+    discount: 0,
     price: 151,
+    childrenCategory: {
+      id: 2,
+      name: "T-Shirts",
+    },
     category: {
       id: 4,
       name: "Jeans",
@@ -281,6 +353,10 @@ exports.products = [
     brand: "Dorothy Perkins",
     discount: 0.2,
     price: 152,
+    childrenCategory: {
+      id: 2,
+      name: "Blouses",
+    },
     category: {
       id: 4,
       name: "Jeans",
@@ -294,8 +370,12 @@ exports.products = [
     ratingCount: 10,
     rating: 5,
     brand: "Dorothy Perkins",
-    discount: 0.2,
+    discount: 0,
     price: 151,
+    childrenCategory: {
+      id: 2,
+      name: "T-Shirts",
+    },
     category: {
       id: 5,
       name: "Shorts",

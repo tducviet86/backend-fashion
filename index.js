@@ -26,6 +26,12 @@ app.route("/categories").get(categoriesController.getCategories);
 app
   .route("/categories/:id/products")
   .get(categoriesController.getProductsByCategory);
+app
+  .route("/categories/:id/children")
+  .get(categoriesController.getChildrenByCategory);
+app
+  .route("/sub-categories/:id/products")
+  .get(categoriesController.getProductByChildren);
 
 app.use(authenticateJWT);
 
