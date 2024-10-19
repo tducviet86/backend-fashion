@@ -17,6 +17,8 @@ exports.products = [
       name: "Tops",
     },
     image: "/Image/image1.jpg",
+    colors: ["#F6F6F6", "#B82222"],
+    sizes: ["M", "L"],
   },
   {
     id: 2,
@@ -36,6 +38,8 @@ exports.products = [
       name: "Shirts & Blouses",
     },
     image: "/Image/image2.jpg",
+    colors: ["#BEA9A9", "#E2BB8D"],
+    sizes: ["L", "XL"],
   },
   {
     id: 3,
@@ -55,6 +59,8 @@ exports.products = [
       name: "Tops",
     },
     image: "/Image/image20.jpg",
+    colors: ["#020202", "#F6F6F6"],
+    sizes: ["S", "M"],
   },
   {
     id: 4,
@@ -66,7 +72,7 @@ exports.products = [
     discount: 0,
     price: 151,
     childrenCategory: {
-      id: 2,
+      id: 1,
       name: "Shirts",
     },
     category: {
@@ -74,6 +80,8 @@ exports.products = [
       name: "Tops",
     },
     image: "/Image/image3.jpg",
+    colors: ["#E2BB8D", "#B82222"],
+    sizes: ["M", "L", "XL"],
   },
   {
     id: 5,
@@ -85,7 +93,7 @@ exports.products = [
     discount: 0,
     price: 151,
     childrenCategory: {
-      id: 2,
+      id: 3,
       name: "T-Shirts",
     },
     category: {
@@ -93,6 +101,8 @@ exports.products = [
       name: "Shirts & Blouses",
     },
     image: "/Image/image4.jpg",
+    colors: ["#151867", "#F6F6F6"],
+    sizes: ["S", "M", "L"],
   },
   {
     id: 6,
@@ -104,7 +114,7 @@ exports.products = [
     discount: 0,
     price: 151,
     childrenCategory: {
-      id: 2,
+      id: 4,
       name: "Blouses",
     },
     category: {
@@ -112,6 +122,8 @@ exports.products = [
       name: "Shirts & Blouses",
     },
     image: "/Image/image5.jpg",
+    colors: ["#BEA9A9", "#E2BB8D"],
+    sizes: ["XS", "M"],
   },
   {
     id: 7,
@@ -123,7 +135,7 @@ exports.products = [
     discount: 0.2,
     price: 152,
     childrenCategory: {
-      id: 2,
+      id: 3,
       name: "T-Shirts",
     },
     category: {
@@ -134,6 +146,8 @@ exports.products = [
       },
     },
     image: "/Image/image6.jpg",
+    colors: ["#B82222", "#020202"],
+    sizes: ["L", "XL"],
   },
   {
     id: 8,
@@ -145,7 +159,7 @@ exports.products = [
     discount: 0,
     price: 151,
     childrenCategory: {
-      id: 2,
+      id: 4,
       name: "T-Shirts",
     },
     category: {
@@ -153,6 +167,8 @@ exports.products = [
       name: "Shirts & Blouses",
     },
     image: "/Image/image7.jpg",
+    colors: ["#E2BB8D", "#151867"],
+    sizes: ["S", "M"],
   },
   {
     id: 9,
@@ -164,7 +180,7 @@ exports.products = [
     discount: 0.2,
     price: 152,
     childrenCategory: {
-      id: 2,
+      id: 10,
       name: "Blouses",
     },
     category: {
@@ -172,6 +188,8 @@ exports.products = [
       name: "Shorts",
     },
     image: "/Image/image8.jpg",
+    colors: ["#F6F6F6", "#BEA9A9"],
+    sizes: ["M", "L"],
   },
   {
     id: 10,
@@ -183,7 +201,7 @@ exports.products = [
     discount: 0,
     price: 151,
     childrenCategory: {
-      id: 2,
+      id: 6,
       name: "Blouses",
     },
     category: {
@@ -191,6 +209,8 @@ exports.products = [
       name: "Cardigans & Sweaters",
     },
     image: "/Image/image9.jpg",
+    colors: ["#B82222", "#151867"],
+    sizes: ["S", "M", "L"],
   },
   {
     id: 11,
@@ -202,7 +222,7 @@ exports.products = [
     discount: 0.2,
     price: 152,
     childrenCategory: {
-      id: 2,
+      id: 9,
       name: "T-Shirts",
     },
     category: {
@@ -210,6 +230,8 @@ exports.products = [
       name: "Shorts",
     },
     image: "/Image/image10.jpg",
+    colors: ["#020202", "#F6F6F6"],
+    sizes: ["M", "L"],
   },
   {
     id: 12,
@@ -221,7 +243,7 @@ exports.products = [
     discount: 0,
     price: 151,
     childrenCategory: {
-      id: 2,
+      id: 5,
       name: "T-Shirts",
     },
     category: {
@@ -229,6 +251,8 @@ exports.products = [
       name: "Cardigans & Sweaters",
     },
     image: "/Image/image11.jpg",
+    colors: ["#B82222", "#E2BB8D"],
+    sizes: ["S", "L"],
   },
   {
     id: 13,
@@ -240,7 +264,7 @@ exports.products = [
     discount: 0.2,
     price: 152,
     childrenCategory: {
-      id: 2,
+      id: 5,
       name: "T-Shirts",
     },
     category: {
@@ -248,6 +272,8 @@ exports.products = [
       name: "Cardigans & Sweaters",
     },
     image: "/Image/image12.jpg",
+    colors: ["#F6F6F6", "#151867"],
+    sizes: ["M", "XL"],
   },
   {
     id: 14,
@@ -259,7 +285,7 @@ exports.products = [
     discount: 0,
     price: 151,
     childrenCategory: {
-      id: 2,
+      id: 5,
       name: "T-Shirts",
     },
     category: {
@@ -267,6 +293,8 @@ exports.products = [
       name: "Cardigans & Sweaters",
     },
     image: "/Image/image13.jpg",
+    colors: ["#E2BB8D", "#B82222"],
+    sizes: ["S", "M"],
   },
   {
     id: 15,
@@ -278,7 +306,7 @@ exports.products = [
     discount: 0.2,
     price: 152,
     childrenCategory: {
-      id: 2,
+      id: 8,
       name: "Blouses",
     },
     category: {
@@ -286,6 +314,8 @@ exports.products = [
       name: "Jeans",
     },
     image: "/Image/image14.jpg",
+    colors: ["#151867", "#E2BB8D"],
+    sizes: ["L", "XL"],
   },
   {
     id: 16,
@@ -297,14 +327,16 @@ exports.products = [
     discount: 0,
     price: 151,
     childrenCategory: {
-      id: 2,
-      name: "Blouses",
+      id: 4,
+      name: "T-Shirts",
     },
     category: {
-      id: 4,
-      name: "Jeans",
+      id: 5,
+      name: "Shorts",
     },
     image: "/Image/image15.jpg",
+    colors: ["#B82222", "#F6F6F6"],
+    sizes: ["M", "L"],
   },
   {
     id: 17,
@@ -316,7 +348,7 @@ exports.products = [
     discount: 0.2,
     price: 152,
     childrenCategory: {
-      id: 2,
+      id: 4,
       name: "Blouses",
     },
     category: {
@@ -324,6 +356,8 @@ exports.products = [
       name: "Shorts",
     },
     image: "/Image/image16.jpg",
+    colors: ["#020202", "#B82222"],
+    sizes: ["S", "M"],
   },
   {
     id: 18,
@@ -336,13 +370,15 @@ exports.products = [
     price: 151,
     childrenCategory: {
       id: 2,
-      name: "T-Shirts",
+      name: "Blouses",
     },
     category: {
-      id: 4,
-      name: "Jeans",
+      id: 1,
+      name: "Tops",
     },
     image: "/Image/image17.jpg",
+    colors: ["#151867", "#E2BB8D"],
+    sizes: ["L", "XL"],
   },
   {
     id: 19,
@@ -354,14 +390,16 @@ exports.products = [
     discount: 0.2,
     price: 152,
     childrenCategory: {
-      id: 2,
-      name: "Blouses",
+      id: 3,
+      name: "T-Shirts",
     },
     category: {
-      id: 4,
-      name: "Jeans",
+      id: 2,
+      name: "Shirts & Blouses",
     },
     image: "/Image/image18.jpg",
+    colors: ["#E2BB8D", "#F6F6F6"],
+    sizes: ["S", "M"],
   },
   {
     id: 20,
@@ -373,13 +411,15 @@ exports.products = [
     discount: 0,
     price: 151,
     childrenCategory: {
-      id: 2,
-      name: "T-Shirts",
+      id: 4,
+      name: "Blouses",
     },
     category: {
-      id: 5,
-      name: "Shorts",
+      id: 3,
+      name: "Cardigans & Sweaters",
     },
     image: "/Image/image19.jpg",
+    colors: ["#020202", "#B82222"],
+    sizes: ["M", "L"],
   },
 ];
