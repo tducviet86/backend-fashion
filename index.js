@@ -23,9 +23,7 @@ app.get("/", (req, res) => {
 app.route("/products").get(productsController.getProducts);
 app.route("/products-tag").get(productsController.getProductsByTag);
 app.route("/categories").get(categoriesController.getCategories);
-app
-  .route("/categories/:id/products")
-  .get(categoriesController.getProductsByCategory);
+
 app
   .route("/categories/:id/children")
   .get(categoriesController.getChildrenByCategory);

@@ -1,12 +1,3 @@
-const { categories } = require("../data/category.data");
-const { products } = require("../data/products.data");
-
-exports.getCategories = (req, res) => {
-  res.status(200).json({
-    categories,
-  });
-};
-
 exports.getProductsByCategory = (req, res) => {
   const { id } = req.params;
   const categoryId = parseInt(id);
@@ -50,28 +41,6 @@ exports.getProductsByCategory = (req, res) => {
       product.sizes.includes(size)
     );
   }
-
-  res.status(200).json({
-    products: filteredProducts,
-  });
-};
-
-exports.getChildrenByCategory = (req, res) => {
-  const { id } = req.params;
-  const categoryId = parseInt(id);
-
-  const category = categories.find((item) => item.id === categoryId);
-  res.status(200).json({
-    categories: category.children,
-  });
-};
-
-exports.getProductByChildren = (req, res) => {
-  const { id } = req.params;
-
-  let filteredProducts = products.filter(
-    (product) => product.childrenCategory.id === parseInt(id)
-  );
 
   res.status(200).json({
     products: filteredProducts,
