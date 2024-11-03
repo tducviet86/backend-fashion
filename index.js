@@ -28,8 +28,8 @@ app
   .route("/categories/:id/children")
   .get(categoriesController.getChildrenByCategory);
 app
-  .route("/sub-categories/:id/products")
-  .get(categoriesController.getProductByChildren);
+  .route("/categories/:id/products")
+  .get(categoriesController.getProductsByFilters);
 
 app.use(authenticateJWT);
 

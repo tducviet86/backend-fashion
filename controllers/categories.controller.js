@@ -7,7 +7,7 @@ exports.getCategories = (req, res) => {
   });
 };
 
-exports.getProductsByCategory = (req, res) => {
+exports.getProductsByFilters = (req, res) => {
   const { id } = req.params;
   const categoryId = parseInt(id);
 
@@ -19,12 +19,13 @@ exports.getProductsByCategory = (req, res) => {
     (item) => item.category.id === categoryId
   );
 
+  // if()
   if (parsedMinPrice) {
     filteredProducts = filteredProducts.filter(
       (product) => product.price >= parsedMinPrice
     );
   }
-  console.log();
+  // console.log();
   if (childrenCategoryId) {
     const parsedChildrenCategoryId = parseInt(childrenCategoryId);
     filteredProducts = filteredProducts.filter(
@@ -38,7 +39,7 @@ exports.getProductsByCategory = (req, res) => {
       (product) => product.price <= parsedMaxPrice
     );
   }
-  console.log(color);
+  // console.log(color);
   if (color) {
     filteredProducts = filteredProducts.filter((product) =>
       product.colors.includes(color)
@@ -66,14 +67,14 @@ exports.getChildrenByCategory = (req, res) => {
   });
 };
 
-exports.getProductByChildren = (req, res) => {
-  const { id } = req.params;
+// exports.getProductByChildren = (req, res) => {
+//   const { id } = req.params;
 
-  let filteredProducts = products.filter(
-    (product) => product.childrenCategory.id === parseInt(id)
-  );
+//   let filteredProducts = products.filter(
+//     (product) => product.childrenCategory.id === parseInt(id)
+//   );
 
-  res.status(200).json({
-    products: filteredProducts,
-  });
-};
+//   res.status(200).json({
+//     products: filteredProducts,
+//   });
+// };
