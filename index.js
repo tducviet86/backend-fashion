@@ -22,12 +22,6 @@ app.use(cookieParser());
 app.get("/", (req, res) => {
   res.send("LetDiv");
 });
-
-app.post("/auth/signup", authController.signup);
-app.post("/auth/login", authController.login);
-
-app.use(authenticateJWT);
-
 app.route("/products").get(productsController.getProducts);
 app.route("/products-tag").get(productsController.getProductsByTag);
 app.route("/categories").get(categoriesController.getCategories);
@@ -39,8 +33,13 @@ app
   .route("/categories/:id/products")
   .get(categoriesController.getProductsByFilters);
 
+app.post("/auth/signup", authController.signup);
+app.post("/auth/login", authController.login);
+
+app.use(authenticateJWT);
+
 app.route("/cart/add").post(cartController.addToCart);
-// app.route("/cart/:id").get(cartController.getCart);
+app.route("/cart").get(cartController.getCart);
 
 app.listen(port, () => {
   console.log(`LetDiv app listening on port ${port}`);
