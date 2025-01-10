@@ -40,6 +40,7 @@ app.use(authenticateJWT);
 
 app.route("/cart/add").post(cartController.addToCart);
 app.route("/cart").get(cartController.getCart);
+app.route("/cart/updateQuantity").put(cartController.updateQuantity);
 
 app.listen(port, () => {
   console.log(`LetDiv app listening on port ${port}`);
