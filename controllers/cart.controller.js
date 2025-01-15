@@ -35,27 +35,49 @@ exports.getCart = (req, res) => {
   });
 };
 exports.updateQuantity = (req, res) => {
-  try {
-    const { itemId, newQuantity } = req.body;
+  const userId = req.userId;
+  const { productId, quantityChange } = req.body;
 
-    if (!itemId || newQuantity == null) {
-      return res.status(400).json({ error: "Invalid input data" });
-    }
+  const user = users.find((user) => user.id === userId);
 
-    // Tìm item trong giỏ hàng
-    const cartItem = cart.find((item) => item.id === itemId);
+  const cartItem = user.cart.find((item) => item.productId === productId);
 
-    if (!cartItem) {
-      return res.status(404).json({ error: "Item not found in cart" });
-    }
+  cartItem.quantity += quantityChange;
 
-    // Cập nhật số lượng
-    cartItem.quantity = newQuantity;
-
-    // Trả về giỏ hàng đã cập nhật
-    return res.status(200).json({ success: true, cart: cart });
-  } catch (error) {
-    console.error("Error updating quantity:", error);
-    return res.status(500).json({ error: "Internal Server Error" });
+  if (cartItem.quantity <= 0) {
+    user.cart = user.cart.filter((item) => item.productId !== productId);
+    return res
+      .status(200)
+      .json({ message: "Item removed from cart", cart: user.cart });
   }
+
+  return res.status(200).json({ success: true, cart: user.cart });
+};
+exports.deleteFromCart = (req, res) => {
+  const userId = req.userId;
+  const { productId } = req.params;
+
+  // Tìm người dùng
+  const user = users.find((user) => user.id === userId);
+  if (!user) {
+    return res.status(404).json({ message: "User not found" });
+  }
+
+  // Kiểm tra sản phẩm trong giỏ hàng
+  const cartItem = user.cart.find(
+    (item) => item.productId === parseInt(productId)
+  );
+  if (!cartItem) {
+    return res.status(404).json({ message: "Product not found in cart" });
+  }
+
+  // Xóa sản phẩm khỏi giỏ hàng
+  user.cart = user.cart.filter(
+    (item) => item.productId !== parseInt(productId)
+  );
+
+  res.status(200).json({
+    message: "Product removed from cart",
+    cart: user.cart,
+  });
 };
