@@ -57,13 +57,11 @@ exports.deleteFromCart = (req, res) => {
   const userId = req.userId;
   const { productId } = req.params;
 
-  // Tìm người dùng
   const user = users.find((user) => user.id === userId);
   if (!user) {
     return res.status(404).json({ message: "User not found" });
   }
 
-  // Kiểm tra sản phẩm trong giỏ hàng
   const cartItem = user.cart.find(
     (item) => item.productId === parseInt(productId)
   );
@@ -71,13 +69,27 @@ exports.deleteFromCart = (req, res) => {
     return res.status(404).json({ message: "Product not found in cart" });
   }
 
-  // Xóa sản phẩm khỏi giỏ hàng
   user.cart = user.cart.filter(
     (item) => item.productId !== parseInt(productId)
   );
 
   res.status(200).json({
     message: "Product removed from cart",
+    cart: user.cart,
+  });
+};
+exports.clearCart = (req, res) => {
+  const userId = req.userId;
+
+  const user = users.find((user) => user.id === userId);
+  if (!user) {
+    return res.status(404).json({ message: "User not found" });
+  }
+
+  user.cart = [];
+
+  res.status(200).json({
+    message: "Cart cleared successfully",
     cart: user.cart,
   });
 };

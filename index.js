@@ -42,6 +42,7 @@ app.route("/cart/add").post(cartController.addToCart);
 app.route("/cart").get(cartController.getCart);
 app.route("/cart/updateQuantity").put(cartController.updateQuantity);
 app.route("/cart/delete/:productId").delete(cartController.deleteFromCart);
+app.route("/cart/clearCart").delete(cartController.clearCart);
 
 app.listen(port, () => {
   console.log(`LetDiv app listening on port ${port}`);
